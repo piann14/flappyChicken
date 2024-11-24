@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="home">
+        <h1>Flappy Chicken Game</h1>
+        <button id="playBtn">Play</button>
+        <button id="instagramBtn">Go to Instagram</button>
+        <p>Developer: Favian Rafif</p>
+        <p>Coins: <span id="coinCount">0</span></p> <!-- Menampilkan jumlah koin -->
+    </div>
+
+    
+
+    <div id="gameCanvasContainer" style="display: none;">
+        <canvas id="gameCanvas"></canvas>
+        <div id="gameOver" style="display: none;">
+            <h2>Game Over</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">Restart</button>
+            <button id="backHomeBtn">Back to Home</button>
+        </div>
+    </div>
+
+    <script src="gameplay.js"></script>
+    <script src="ig.js"></script>
+</body>
+</html>
